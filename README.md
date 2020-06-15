@@ -1,12 +1,12 @@
 # The lifelong journey to Pentesting
 Or how I spent a significant part of my life trying to:
-> do something I was not supposed to do
-> be somewhere I wasn't supposed to be
-> enjoy breaking stuff on a seemingly non-material level, seemingly without consequences
-> ask questions that were not understood by mere mortals
-> learning to restructure my thought process
-> learning that pentesting is the art of combining the most intricate details of each craft, use needle, thread, scalpel, knife, saw, chainsaw, soft,regular and sledge hammers
-> do a surgery with a saw, break glass with a needle and clean tooth cavity with a hammer without losing any teeth
+- do something I was not supposed to do
+- be somewhere I wasn't supposed to be
+- enjoy breaking stuff on a seemingly non-material level, seemingly without consequences
+- ask questions that were not understood by mere mortals
+- learning to restructure my thought process
+- learning that pentesting is the art of combining the most intricate details of each craft, use needle, thread, scalpel, knife, saw, chainsaw, soft,regular and sledge hammers
+- do a surgery with a saw, break glass with a needle and clean tooth cavity with a hammer without losing any teeth
 
 Мога да изпиша много редове за това какво е, какво не е, и какво всъщност е Pentestinga, но би било безкрайно отегчително.
 Съжалявам пичове, вероятно ще ви разочаровам като ви кажа че има ужасно голямо количество философия в пентестинга, като най-добрите приятели на философа са Защо, придружаван от Ку Клукс Клана - Как Колко Къде (Кога и Кому ми развалят бройката).
