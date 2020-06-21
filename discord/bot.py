@@ -7,7 +7,7 @@ import requests
 import json
 
 bot = commands.Bot(command_prefix='#',
-description='''Every Nansense Project''')
+description='''Every Nansense Project, every command has an info function''')
 
 @bot.event
 async def on_ready():
@@ -25,14 +25,18 @@ async def ping(ctx):
 
 @bot.command()
 async def apex(ctx, username=None):
-
+    """Checks your stats in apex legends"""
+    
     # Check if user has provided username
     if not username:
         await ctx.send("Please give me an Origin username")
         await ctx.send("`usage: #apex username`")
         return
+
+    # If user provides info as input, print information about the command
+    elif str(username) == "info":
+        await ctx.send("The #apex function was added on 20.06.2020 as an excercise in requests, json, dicts, lists and if statements  ")
     else:
-        
         r = requests.get("https://public-api.tracker.gg/v2/apex/standard/profile/5/{}".format(username), headers={"TRN-Api-Key": str(kluch)})       
 
         # Check if the account exists or not
