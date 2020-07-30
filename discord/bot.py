@@ -5,6 +5,7 @@ from discord.ext import commands
 from apikey import kluch
 import requests
 import json
+import string
 
 bot = commands.Bot(command_prefix='#',
 description='''Every Nansense Project, every command has an info function''')
@@ -60,9 +61,32 @@ async def apex(ctx, username=None):
             print("Account doesn't exist or API error")
             return
 
+@bot.command()
+async def emojitalk(ctx, userSays=None, AsAList=False):
 
-    
-
+    alphabet = list(string.ascii_lowercase)
+    discord = [str(f":regional_indicator_{i}:") for i in alphabet]
+    disctionary = dict(zip(alphabet, discord))
+    print(userSays)
+    await ctx.send(userSays)
+    if not userSays:
+        await ctx.send("Please say something")
+        return
+    else:
+        userList = [char for char in userSays]
+        print(userList)
+        for word in userList:
+            finalResult = disctionary[word]
+            finalList = []
+            finalList.append(str(finalResult))
+            if AsAList is True:
+                await ctx.send(finalList)
+                asyncio.sleep(2)
+            else:
+                finalString='  '.join(finalList)
+                await ctx.send(finalString)
+        return
+        
 loop = asyncio.get_event_loop()
 try:
     loop.run_until_complete(bot.start(TOKEN))
